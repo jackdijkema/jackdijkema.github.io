@@ -1,0 +1,2 @@
+# minWebsite
+Minimalistic website
