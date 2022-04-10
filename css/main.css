@@ -30,7 +30,7 @@ main {
 }
  
 .container-bio {
-  margin: auto;
+  /* margin: auto; */
 }
 
 .container-bio > h1 {
@@ -39,9 +39,9 @@ main {
 
 .title {
     display: flex;    
+    margin: auto;
     width: 100%;
-    /* justify-content: center; */
-    border:yellow 1px solid;
+    justify-content: center;
   }
 
   .title > figure {
@@ -51,7 +51,7 @@ main {
   .title figure > img {
     max-width: auto;
     max-height: 100%;
-    /* margin: auto; */
+    margin: auto;
   }  
  
 .content {
