@@ -1,117 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
+:root {
+  --bg: #bae8e8;
+  --text: #272643;
+}
+
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
+
+
 
 body {
-  background-color: white; 
-  color: black;
+  font-family: 'Spectral', serif;
   font-size: 16px;
-  font-family: 'Spectral', serif;
-  font-weight: 400;
+  color: var(--text);
+  background-color: var(--bg);
 }
 
-main {
-  width: 100%;
-  margin-top: 1rem;
-}
+/* Landing Page  */
 
-.container {
-  max-width: 800px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-
-  width: 100vw;
-  /* max-width: 80vw; */
-  margin: auto;
-}
- 
-.container-bio {
-  /* margin: auto; */
-}
-
-.container-bio > h1 {
-  font-size: 2rem;
-}
-
-.title {
-    display: flex;    
-    margin: auto;
-    width: 100%;
-    justify-content: center;
-  }
-
-  .title > figure {
-    display: flex;
-  }
-
-  .title figure > img {
-    max-width: auto;
-    max-height: 100%;
-    margin: auto;
-  }  
- 
-.content {
+.landing-page {
   display: flex;
   flex-direction: column;
-  font-family: 'Spectral', serif;
-  font-weight: 400;
-  max-width: 80vw;
-  width: 100%;
-  margin: 1rem auto 1rem auto;
-}
-
-article {
-  margin-top: 0.5rem;
-}
-
-article > h1{
-  font-size: 2rem;
-}
-
-.links {
-  list-style: none;
-}
-
-.links a {
-  font-size: 1rem;
-  color: black;
-}
-
-.project {
-  display: flex;
-  border: black 2px solid;
-  border-radius: 5px;
-  flex-direction: row;
-  padding: 1rem 1rem 1rem 1rem;
+  align-items: center;
   justify-content: center;
-  align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 8px 8px;
+  height: 100vh;
 }
 
-figure {
-  display: flex;
-  width: 10rem;
-  height: 10rem;
-  align-items: center;
-  margin-right: 1rem;  
+.landing-page > h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
-.project > figure > img {
-  object-fit: cover;
+.landing-page > h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-bottom: 1px solid var(--text);
+  margin-bottom: 1rem;
+}
+
+.fade-in {
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.landing-page > figure {
   max-width: 100%;
   max-height: 100%;
+}
+
+/* Education */
+
+.education {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  object-position: center;
+  justify-content: center;
+  height: 100vh;
 }
 
- .content > h1 {
-  font-size: 2rem;
+.education > h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  border-bottom: 1px solid var(--text);
+  margin-bottom: 1rem;
 }
 
-.projects > h1 {
-  font-size: 2rem;
+/* Projects */
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.projects > h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+
+  border-bottom: 1px solid var(--text);
+  margin-bottom: 1rem;
+}
+
+.project-item {
+  margin-bottom: 1rem;
+}
+
+.socials {
+  list-style-type: none;
+}
+
+.socials > li > a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--text);
 }
