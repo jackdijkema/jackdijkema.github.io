@@ -13,8 +13,6 @@
   scroll-behavior: smooth;
 }
 
-
-
 body {
   font-family: 'Spectral', serif;
   font-size: 16px;
@@ -92,12 +90,15 @@ body {
 .projects > h2 {
   font-size: 2.5rem;
   font-weight: 700;
-
   border-bottom: 1px solid var(--text);
   margin-bottom: 1rem;
 }
 
 .project-item {
+  margin-bottom: 1.5rem;
+}
+
+.project-item > p { 
   margin-bottom: 1rem;
 }
 
@@ -109,4 +110,92 @@ body {
   cursor: pointer;
   text-decoration: none;
   color: var(--text);
+}
+
+.btn {
+  padding: 0.1;
+  background: transparent;
+  /* border: black 1px solid; */
+  border-radius: 5px;
+  margin-top: 1rem;
+  color: black;
+  text-decoration: none;
+}
+.inquiries {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.inquiries > h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  border-bottom: 1px solid var(--text);
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 1rem;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 0.5rem;
+}
+form > h2 {
+  text-align: center;
+}
+
+
+form > input {
+  margin: auto;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border: #272643 solid 1px;
+  max-width: 70%;
+  width: 70%;
+  height: 1rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+form > input[type="text"] {
+  margin: auto;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border: #272643 solid 1px;
+  max-width: 70%;
+  width: 70%;
+  height: 2rem;
+  padding: 0.5rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+form > label {
+  margin: auto;
+}
+
+form > input[type=submit] {
+    font-size: 0.8rem;
+    border: #272643 solid 1px;
+    padding: 0.5rem;
+    font-family: 'Spectral', serif;
+    height: 3rem;
+    font-weight: 700;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
+}
+form > .textbox {
+  font-size: 0.8rem;
+  height: 100px;
+  border: #272643 solid 1px;
+  padding: 0.5rem;
+  background-color: transparent;
+  max-width: 500px;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 1rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
