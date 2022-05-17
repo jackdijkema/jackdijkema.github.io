@@ -1,2 +1,1 @@
-# minWebsite
-Minimalistic website
+# Minimalistic website
